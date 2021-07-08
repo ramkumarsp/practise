@@ -1,14 +1,9 @@
 package com.practise.java.eight.stream;
 
-import com.practise.java.pojo.FourWheeler;
-import com.practise.java.pojo.Individual;
-import com.practise.java.pojo.TwoWheeler;
-import com.practise.java.pojo.Vehicle;
+import com.practise.java.pojo.*;
+import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
 
-import java.io.PrintStream;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -17,7 +12,40 @@ public class StreamPractise {
         List<Individual> individuals = getIndividuals();
 //        flatMapPractise(individuals);
 //        find(individuals);
+//        toMapPractise(individuals);
+//        filterPractise(individuals);
+//        anyMatch();
+
+        Individual individual = new Individual("Ramesh", Arrays.asList(new FourWheeler(Vehicle.Make.MARUTI, "Swift", 5)), new HashMap<String, SalaryStack>() {{
+            put("wife", new SalaryStack("amala", 100000));
+            put("son", new SalaryStack("surya", 50000));
+        }});
+//        Gson gson = new Gson();
+//        Type gsonType = new TypeToken<HashMap>(){}.getType();
+//        String gsonString = gson.toJson(elements,gsonType);
+//        System.out.println(gsonString);
+//        System.out.println(individual);
+
+
         List<Vehicle> vehicleList = Arrays.asList(new FourWheeler(Vehicle.Make.MARUTI, "Swift", 5), new TwoWheeler(Vehicle.Make.HONDA, "Activa", 2), new TwoWheeler(Vehicle.Make.TVS, "Apache", 2), new TwoWheeler(Vehicle.Make.HERO, "Splendor", 2), new TwoWheeler(Vehicle.Make.BAJAJ, "M80", 2), new TwoWheeler(Vehicle.Make.HONDA, "Unicorn", 2), new FourWheeler(Vehicle.Make.FORCE, "Gurka", 9), new FourWheeler(Vehicle.Make.MARUTI, "Baleno", 5), new FourWheeler(Vehicle.Make.HONDA, "CRV", 5), new FourWheeler(Vehicle.Make.HYUNDAI, "Alcazar", 7), new FourWheeler(Vehicle.Make.MAHINDRA, "XUV500", 7), new FourWheeler(Vehicle.Make.TOYOTO, "Innova Crysta", 7), new FourWheeler(Vehicle.Make.HYUNDAI, "Creta", 5), new FourWheeler(Vehicle.Make.KIA, "Seltos", 5), new FourWheeler(Vehicle.Make.TATA, "Gravitas", 7));
+    }
+
+    private static void anyMatch() {
+        String check = "786298";
+        boolean b = Arrays.asList(check.split(",")).stream().anyMatch(id -> "786298".equals(id));
+        System.out.println(b);
+    }
+
+    private static void filterPractise(List<Individual> individuals) {
+        List<Individual> filteredWithNameStartingWithR = individuals.stream()
+                //filter and allow only the matching values
+                .filter(individual -> individual.getName().toLowerCase().startsWith("r")).collect(Collectors.toList());
+        System.out.println(filteredWithNameStartingWithR);
+    }
+
+    private static void toMapPractise(List<Individual> individuals) {
+        Map<String, List<Vehicle>> collectedMap = individuals.stream().collect(Collectors.toMap(Individual::getName, individual -> individual.getVehicles().stream().collect(Collectors.toList())));
+        System.out.println(collectedMap);
     }
 
     private static void find(List<Individual> individuals) {
