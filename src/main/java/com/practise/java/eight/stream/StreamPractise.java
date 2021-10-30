@@ -16,6 +16,14 @@ public class StreamPractise {
 //        filterPractise(individuals);
 //        anyMatch();
 
+        Stream<Individual> stream = individuals.stream();
+
+        if(stream.count() > 0) {
+            System.out.println("Inside the stream see if it works multiple times");
+            stream.forEach(v -> System.out.println(v));
+            System.out.println("Inside the stream see if it works multiple times");
+        }
+
         Individual individual = new Individual("Ramesh", Arrays.asList(new FourWheeler(Vehicle.Make.MARUTI, "Swift", 5)), new HashMap<String, SalaryStack>() {{
             put("wife", new SalaryStack("amala", 100000));
             put("son", new SalaryStack("surya", 50000));
