@@ -1,0 +1,44 @@
+1. Aggregator
+    The Composite microservices aggregates / manipulates / transforms the data from the core microservices and
+        exposes the REST end points.
+2. API Gateway
+    client sends request to the API Gateway which acts as an entry point to forward the
+        clients requests to the appropriate microservices.
+    Then, with the help of the load balancer, the load of the request is handled and the
+        request is sent to the respective services.
+3. Chained or Chain of Responsibility
+    request -> A -> B -> C and then C -> B -> A -> response. The services use synchronous HTTP request/response.
+        Hence not advisable to have long chains.
+4. Asynchronous Messaging
+    Asynchronous Messaging Design Pattern 
+5. Database or Shared Data
+    Database per service is better and solves Duplication of data and inconsistency, different storage specifications,
+        Few business transactions can query the data, with multiple services
+    Shared database per service is better to solve issue of de-normalization when monolithic app is broken down,
+        But not more thant 2-3 micros to share same databases.
+7. Event Sourcing
+
+8. Command Query Responsibility Segregator (CQRS)
+    Application is divided into 2 parts: Command and Query.
+    The command part will handle all the requests related to CREATE, UPDATE, DELETE,
+        while the query part will take care of the materialized views.
+    Materialized view(read) are updated through sequence of events which are created using event source pattern(point 8).
+9. Branch
+
+10. Circuit Breaker
+
+11. Decomposition
+    Decomposition of the MS can be by business capabilities or sub-domains.
+    e-Comm application if split by business capabilities -> separate services for orders, payment, customers, products
+    e-Comm application if split by sub-domain -> customer management, customer support, etc.
+12. Strangler Pattern or Vine Pattern (transform one domain at a time , stabilize it and replace it)
+    based on the analogy to a vine which basically strangles a tree that it is wrapped around
+    According to the strangler pattern, two separate applications will live side by side in the same URI space,
+        and one domain will be taken in to account at an instance of time.
+    So, eventually, the new refactored application wraps around or strangles or replaces the original application until
+        you can shut down the monolithic application
+
+
+
+The links used are :
+https://www.edureka.co/blog/microservices-design-patterns

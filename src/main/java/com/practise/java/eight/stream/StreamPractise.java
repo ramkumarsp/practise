@@ -16,23 +16,22 @@ public class StreamPractise {
 //        filterPractise(individuals);
 //        anyMatch();
 
-        Stream<Individual> stream = individuals.stream();
-
-        if(stream.count() > 0) {
-            System.out.println("Inside the stream see if it works multiple times");
-            stream.forEach(v -> System.out.println(v));
-            System.out.println("Inside the stream see if it works multiple times");
-        }
+//        Stream<Individual> stream = individuals.stream();
+//
+//        if(stream.count() > 0) {
+//            System.out.println("Inside the stream see if it works multiple times");
+//            stream.forEach(v -> System.out.println(v));
+//            System.out.println("Inside the stream see if it works multiple times");
+//        }
 
         Individual individual = new Individual("Ramesh", Arrays.asList(new FourWheeler(Vehicle.Make.MARUTI, "Swift", 5)), new HashMap<String, SalaryStack>() {{
             put("wife", new SalaryStack("amala", 100000));
             put("son", new SalaryStack("surya", 50000));
         }});
-//        Gson gson = new Gson();
-//        Type gsonType = new TypeToken<HashMap>(){}.getType();
-//        String gsonString = gson.toJson(elements,gsonType);
-//        System.out.println(gsonString);
 //        System.out.println(individual);
+
+        List<Individual> collect = individuals.stream().sorted((i1, i2) -> {return i1.getName().compareTo(i2.getName());}).collect(Collectors.toList());
+        collect.forEach(System.out::println);
 
 
         List<Vehicle> vehicleList = Arrays.asList(new FourWheeler(Vehicle.Make.MARUTI, "Swift", 5), new TwoWheeler(Vehicle.Make.HONDA, "Activa", 2), new TwoWheeler(Vehicle.Make.TVS, "Apache", 2), new TwoWheeler(Vehicle.Make.HERO, "Splendor", 2), new TwoWheeler(Vehicle.Make.BAJAJ, "M80", 2), new TwoWheeler(Vehicle.Make.HONDA, "Unicorn", 2), new FourWheeler(Vehicle.Make.FORCE, "Gurka", 9), new FourWheeler(Vehicle.Make.MARUTI, "Baleno", 5), new FourWheeler(Vehicle.Make.HONDA, "CRV", 5), new FourWheeler(Vehicle.Make.HYUNDAI, "Alcazar", 7), new FourWheeler(Vehicle.Make.MAHINDRA, "XUV500", 7), new FourWheeler(Vehicle.Make.TOYOTO, "Innova Crysta", 7), new FourWheeler(Vehicle.Make.HYUNDAI, "Creta", 5), new FourWheeler(Vehicle.Make.KIA, "Seltos", 5), new FourWheeler(Vehicle.Make.TATA, "Gravitas", 7));
@@ -73,7 +72,7 @@ public class StreamPractise {
         System.out.println("Count of Flatmap combination with Set :" + individuals.stream().flatMap(individual -> individual.getVehicles().stream()).collect(Collectors.toSet()).stream().count());
     }
 
-    private static List<Individual> getIndividuals() {
+    public static List<Individual> getIndividuals() {
         return Arrays.asList(
                 new Individual("Suresh", Arrays.asList(
                         new TwoWheeler(Vehicle.Make.ROYAL_ENFIELD, "Thunderbird", 2),
