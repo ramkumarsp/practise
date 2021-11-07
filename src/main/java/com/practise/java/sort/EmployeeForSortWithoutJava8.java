@@ -1,11 +1,9 @@
-package com.designPatterns.sort;
+package com.practise.java.sort;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
-
-import java.util.Comparator;
 
 @NoArgsConstructor
 @AllArgsConstructor

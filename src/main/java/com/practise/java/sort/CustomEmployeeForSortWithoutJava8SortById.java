@@ -1,4 +1,4 @@
-package com.designPatterns.sort;
+package com.practise.java.sort;
 
 import java.util.ArrayList;
 import java.util.Collections;
