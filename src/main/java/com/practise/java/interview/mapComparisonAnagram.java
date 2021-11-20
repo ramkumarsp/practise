@@ -16,6 +16,18 @@ public class mapComparisonAnagram {
 
         boolean anagram = collecta.entrySet().stream().noneMatch(entry -> collectb.get(entry.getKey()) != entry.getValue());
         //sort the arrays and compare to do this easily
+      //  String[] aSplit = a.split("");
+      //  String[] aSplit = a.split("");
+//        b.split(.)
+//        Arrays.sort(aSplit);
+//        Arrays.sort(aSplit);
+        for (int i=0;i<a.length();i++){
+            int index=b.indexOf(String.valueOf(a.charAt(i)));
+            if(index>0){
+//                b.
+            }
+        }
+
 
     }
 

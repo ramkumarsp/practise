@@ -9,6 +9,7 @@ public class Demo3 {
     public static void main(String[] args) {
         Demo3 d = new Demo3();
         d.start();
+        System.out.println("piper".charAt(3));
 
 
 //        int var1 = 101;
@@ -46,8 +47,8 @@ public class Demo3 {
     void start(){
         long ar1[] = {3,8,2};
         long ar2[]=method(ar1);
-        System.out.println(ar1[0]+ar1[1]+ar1[2]+" ");
-        System.out.println(ar2[0]+ar2[1]+ar2[2]+" ");
+//        System.out.println(ar1[0]+ar1[1]+ar1[2]+" ");
+//        System.out.println(ar2[0]+ar2[1]+ar2[2]+" ");
     }
 
     long[] method(long[] a3){
