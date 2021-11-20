@@ -1,4 +1,4 @@
-package com.practise.java.interview.gp;
+package com.practise.java.interview.genpact;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.practise.java.interview.gp;
+package com.practise.java.interview.genpact;
 
 import java.util.ArrayList;
 import java.util.Comparator;
