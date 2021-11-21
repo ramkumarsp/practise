@@ -1,0 +1,9 @@
+SEARCH COMPLEXITIES
+    linear search O(n)
+    binary search O(log n)
+
+SORT COMPLEXITIES
+    bubble sort O(n^2)
+    quick sort O(n log n)
+
+COLLECTION COMPLEXITIES
