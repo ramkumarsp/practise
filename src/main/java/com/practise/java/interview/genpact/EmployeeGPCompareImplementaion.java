@@ -1,9 +1,6 @@
 package com.practise.java.interview.genpact;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class EmployeeGPCompareImplementaion {
@@ -28,6 +25,11 @@ public class EmployeeGPCompareImplementaion {
         if (first30KEmployee.isPresent()) {
             System.out.print(first30KEmployee.get());
         }
+
+        Map<Integer, String> collectedMap = employeeGPList.stream().collect(Collectors.toMap(EmployeeGP::getId, EmployeeGP::getName));
+
+
+        List<Map.Entry<Integer, String>> collect = collectedMap.entrySet().stream().collect(Collectors.toList());
 
     }
 }
