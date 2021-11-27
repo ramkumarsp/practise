@@ -32,10 +32,10 @@ public class AtomicCollectionPossibility {
         ints[5] = 6;
 
 //        Arrays.stream(ints).sorted().
-        ArrayList<Integer> integers = new ArrayList<Integer>(ints);
-        List<int[]> sorted = Arrays.stream(ints).stream().flatMap(k -> Arrays.asList(k)).stream().sorted().collect(Collectors.toList());
-        System.out.println(Math.ceil(IntStream.rangeClosed(1,6).count())/2);
-        Integer o = 3;
-        o.
+//        ArrayList<Integer> integers = new ArrayList<Integer>(ints);
+//        List<int[]> sorted = Arrays.stream(ints).stream().flatMap(k -> Arrays.asList(k)).stream().sorted().collect(Collectors.toList());
+//        System.out.println(Math.ceil(IntStream.rangeClosed(1,6).count())/2);
+//        Integer o = 3;
+//        o.
     }
 }
