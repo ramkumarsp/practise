@@ -1,2 +1,2 @@
-    To avoid cuncurrentModufucationException use
+To avoid cuncurrentModufucationException use
     ConcurrentHashMap or CopyOnWrite collections
