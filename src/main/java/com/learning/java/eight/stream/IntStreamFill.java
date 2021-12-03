@@ -1,4 +1,4 @@
-package com.practise.java.eight.stream;
+package com.learning.java.eight.stream;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

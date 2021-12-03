@@ -1,4 +1,4 @@
-package com.practise.java.interview.genpact;
+package com.learning.java.interview.genpact;
 
 import java.util.*;
 import java.util.stream.Collectors;

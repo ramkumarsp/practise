@@ -1,4 +1,4 @@
-package com.designPatterns.singleton;
+package com.learning.designPatterns.singleton;
 
 public class MySingleton implements Cloneable{
 

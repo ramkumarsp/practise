@@ -1,4 +1,4 @@
-package com.practise.java.sort;
+package com.learning.java.sort;
 
 import org.assertj.core.util.Lists;
 import org.junit.jupiter.api.Assertions;

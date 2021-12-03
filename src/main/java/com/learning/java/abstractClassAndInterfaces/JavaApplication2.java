@@ -1,4 +1,4 @@
-package com.practise.java.abstractClassAndInterfaces;
+package com.learning.java.abstractClassAndInterfaces;
 
 abstract class DemoAbstractClass2 implements printable{
     abstract void display();

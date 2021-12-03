@@ -1,4 +1,4 @@
-package com.practise.java.pojo;
+package com.learning.java.pojo;
 
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package com.designPatterns.abstractactory;
+package com.learning.designPatterns.abstractactory;
 
 public class LoggedInXUPShoppingCart implements ShopCart {
     @Override

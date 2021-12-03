@@ -1,11 +1,9 @@
-package com.practise.java.eight.stream;
+package com.learning.java.eight.stream;
 
-import com.practise.java.pojo.*;
-import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
+import com.learning.java.pojo.*;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class StreamPractise {
     public static void main(String[] args) {

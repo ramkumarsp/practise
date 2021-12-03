@@ -1,4 +1,4 @@
-package com.practise.java.interview.test;
+package com.learning.java.interview.test;
 
 public class Return {
     public static void main(String[] args) {

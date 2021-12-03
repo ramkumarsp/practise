@@ -1,6 +1,4 @@
-package com.practise.java.data.conversion;
-
-import org.springframework.data.mongodb.core.aggregation.ArrayOperators;
+package com.learning.java.data.conversion;
 
 import java.util.Arrays;
 

@@ -1,9 +1,7 @@
-package com.sriram;
+package com.learning.check;
 
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
 
 public class Demo3 {
     public static void main(String[] args) {

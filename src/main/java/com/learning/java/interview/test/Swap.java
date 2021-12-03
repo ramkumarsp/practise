@@ -1,7 +1,6 @@
-package com.practise.java.interview.test;
+package com.learning.java.interview.test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Swap {

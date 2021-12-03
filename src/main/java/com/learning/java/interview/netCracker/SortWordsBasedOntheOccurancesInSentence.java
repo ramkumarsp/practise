@@ -1,4 +1,4 @@
-package com.netCracker;
+package com.learning.java.interview.netCracker;
 
 import java.util.*;
 import java.util.stream.Collectors;

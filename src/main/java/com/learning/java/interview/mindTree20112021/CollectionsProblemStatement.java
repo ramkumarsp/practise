@@ -1,4 +1,4 @@
-package com.practise.java.interview.mindTree20112021;
+package com.learning.java.interview.mindTree20112021;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

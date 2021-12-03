@@ -1,4 +1,4 @@
-package com.practise.java.interview;
+package com.learning.java.interview;
 
 import java.util.Arrays;
 import java.util.Map;

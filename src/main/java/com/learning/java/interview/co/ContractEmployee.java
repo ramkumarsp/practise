@@ -1,4 +1,4 @@
-package com.practise.java.interview.co;
+package com.learning.java.interview.co;
 
 public class ContractEmployee implements EmployeeCO{
     int salary = 20000;

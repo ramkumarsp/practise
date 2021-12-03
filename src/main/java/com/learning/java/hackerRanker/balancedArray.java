@@ -1,4 +1,4 @@
-package com.practise.java.hackerRanker;
+package com.learning.java.hackerRanker;
 
 import org.springframework.util.CollectionUtils;
 

@@ -1,4 +1,4 @@
-package com.sriram;
+package com.learning.check;
 
 import java.util.Arrays;
 import java.util.HashMap;

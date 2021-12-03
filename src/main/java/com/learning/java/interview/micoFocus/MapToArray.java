@@ -1,6 +1,5 @@
-package com.sql.questions.micoFocus;
+package com.learning.java.interview.micoFocus;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 

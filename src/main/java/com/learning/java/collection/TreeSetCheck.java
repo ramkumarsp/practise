@@ -1,7 +1,4 @@
-package com.practise.java.collection;
-
-import java.util.Set;
-import java.util.TreeSet;
+package com.learning.java.collection;
 
 public class TreeSetCheck {
     public static void main(String[] args) {

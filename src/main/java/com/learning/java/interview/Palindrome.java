@@ -1,10 +1,4 @@
-package com.practise.java.interview;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Stack;
-import java.util.stream.IntStream;
+package com.learning.java.interview;
 
 public class Palindrome {
     public static void main(String[] args) {

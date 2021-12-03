@@ -1,4 +1,4 @@
-package com.practise.java.interview.mind;
+package com.learning.java.interview.mind;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

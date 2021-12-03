@@ -1,4 +1,4 @@
-package com.practise.java.abstractClassAndInterfaces;
+package com.learning.java.abstractClassAndInterfaces;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;

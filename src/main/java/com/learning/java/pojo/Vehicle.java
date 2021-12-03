@@ -1,4 +1,4 @@
-package com.practise.java.pojo;
+package com.learning.java.pojo;
 
 public interface Vehicle {
     enum Make {

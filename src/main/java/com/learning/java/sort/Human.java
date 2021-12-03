@@ -1,4 +1,4 @@
-package com.practise.java.sort;
+package com.learning.java.sort;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

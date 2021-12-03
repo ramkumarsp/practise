@@ -1,6 +1,6 @@
-package com.practise.java.constructor;
+package com.learning.java.constructor;
 
-import com.practise.java.pojo.UserPreferenceDetails;
+import com.learning.java.pojo.UserPreferenceDetails;
 
 public class ConstructorPractise {
     public static void main(String[] args) {

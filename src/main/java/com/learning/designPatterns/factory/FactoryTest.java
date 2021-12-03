@@ -1,4 +1,4 @@
-package com.designPatterns.factory;
+package com.learning.designPatterns.factory;
 
 public class FactoryTest {
 

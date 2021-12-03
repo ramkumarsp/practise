@@ -1,4 +1,4 @@
-package com.practise.java.hackerRanker;
+package com.learning.java.hackerRanker;
 
 import org.apache.commons.lang3.StringUtils;
 

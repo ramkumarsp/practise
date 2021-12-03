@@ -1,9 +1,7 @@
-package com.practise.java.interview.test;
+package com.learning.java.interview.test;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
-import java.util.TreeSet;
 
 class EmployeeTest2 {
     String id;

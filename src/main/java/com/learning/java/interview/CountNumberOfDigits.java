@@ -1,4 +1,4 @@
-package com.practise.java.interview;
+package com.learning.java.interview;
 
 public class CountNumberOfDigits {
     public static void main(String[] args) {

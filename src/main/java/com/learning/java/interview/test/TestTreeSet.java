@@ -1,7 +1,6 @@
-package com.practise.java.interview.test;
+package com.learning.java.interview.test;
 
 import java.util.Objects;
-import java.util.Set;
 import java.util.TreeSet;
 
 class EmployeeTest1 implements Comparable<EmployeeTest1>{

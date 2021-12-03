@@ -1,4 +1,4 @@
-package com.sriram;
+package com.learning.check;
 
 public class Temporary {
     public static void main(String[] args) {

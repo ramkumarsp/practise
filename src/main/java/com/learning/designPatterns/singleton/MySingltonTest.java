@@ -1,4 +1,4 @@
-package com.designPatterns.singleton;
+package com.learning.designPatterns.singleton;
 
 public class MySingltonTest {
     public static void main(String[] args) throws CloneNotSupportedException {

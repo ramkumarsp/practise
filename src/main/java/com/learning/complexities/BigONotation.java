@@ -1,4 +1,4 @@
-package com.complexities;
+package com.learning.complexities;
 
 // Big O notation is a way to measure how well a
 // computer algorithm scales as the amount of data

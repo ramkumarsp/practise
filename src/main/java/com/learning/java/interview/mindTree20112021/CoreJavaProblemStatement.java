@@ -1,6 +1,4 @@
-package com.practise.java.interview.mindTree20112021;
-
-import java.util.Arrays;
+package com.learning.java.interview.mindTree20112021;
 
 public class CoreJavaProblemStatement {
     public static void main(String[] args) {

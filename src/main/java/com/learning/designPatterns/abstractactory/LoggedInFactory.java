@@ -1,4 +1,4 @@
-package com.designPatterns.abstractactory;
+package com.learning.designPatterns.abstractactory;
 
 public class LoggedInFactory extends AbstractCartFactory{
     public ShopCart getShopCartObject(String shopCartType){

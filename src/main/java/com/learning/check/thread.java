@@ -1,4 +1,4 @@
-package com.sriram;
+package com.learning.check;
 
 class newthread implements Runnable{
     Thread t;

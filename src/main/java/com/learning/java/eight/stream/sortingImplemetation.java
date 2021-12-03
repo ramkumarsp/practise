@@ -1,8 +1,8 @@
-package com.practise.java.eight.stream;
+package com.learning.java.eight.stream;
 
-import com.practise.java.pojo.FourWheeler;
-import com.practise.java.pojo.Individual;
-import com.practise.java.pojo.TwoWheeler;
+import com.learning.java.pojo.FourWheeler;
+import com.learning.java.pojo.Individual;
+import com.learning.java.pojo.TwoWheeler;
 
 import java.util.*;
 import java.util.stream.Collectors;
