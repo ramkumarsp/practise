@@ -11,5 +11,6 @@ public class HashMapCheck {
         num.put(i+"",2);
         num.put("i", 4);
         System.out.println(num.get(i));
+        String name;
     }
 }
