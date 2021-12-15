@@ -1,14 +1,15 @@
 package com.learning.check;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.StringJoiner;
 
 public class Demo3 {
     public static void main(String[] args) {
         Demo3 d = new Demo3();
         d.start();
         System.out.println("piper".charAt(3));
-
 
 //        int var1 = 101;
 //        int var2 = 159;

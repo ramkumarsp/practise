@@ -16,7 +16,7 @@ public class FactorialUsingLoopsAndRecursion {
 
     }
 
-    private int factorialUsingLoop(int n) {
+    public int factorialUsingLoop(int n) {
         int factorialValue = 1;
         for (int i = 1; i <= n; i++) {
             factorialValue = factorialValue * i;
