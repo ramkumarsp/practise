@@ -2,6 +2,8 @@ package com.learning.java.interview.encora2;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.apache.commons.lang3.ObjectUtils;
+import org.springframework.data.annotation.Immutable;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -47,6 +49,7 @@ public class ImmutableImplementation {
         List<Student> students = null;
         List<Student> sortedWithFName = students.stream().sorted(Comparator.comparing(Student::getFname)).collect(Collectors.toList());
         List<Integer> integerList = Arrays.asList(1,2,3,4,5);
+
 
         Integer sumOfSquareOfOddNumbers = integerList.stream().filter(integer -> integer % 2 == 1).map(integer -> integer * integer).collect(Collectors.summingInt(Integer::intValue));
         Double sumOfSquareOfOddNumbers0 = integerList.stream().filter(integer -> integer % 2 == 1).map(integer -> Math.pow(integer, 2)).collect(Collectors.summingDouble(Double::intValue));

@@ -3,12 +3,29 @@ package com.learning.java.eight.stream;
 import com.learning.java.pojo.FourWheeler;
 import com.learning.java.pojo.Individual;
 import com.learning.java.pojo.TwoWheeler;
+import com.sun.org.apache.xpath.internal.operations.Bool;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class sortingImplemetation {
+public class SortingImplemetation {
     public static void main(String[] args) {
+
+        List<SampleSortingObject> sampleSortingObjects = Arrays.asList(
+                new SampleSortingObject(1L, 400.00, false, false),
+                new SampleSortingObject(2L, 500.00, false, false),
+                new SampleSortingObject(3L, 750.00, false, false),
+                new SampleSortingObject(4L, 750.00, false, false)
+        );
+        System.out.println(sampleSortingObjects);
+
+        List<SampleSortingObject> collect2 = sampleSortingObjects.stream().sorted(Comparator.comparing(SampleSortingObject::getDiscountAmount)).collect(Collectors.toCollection(LinkedList::new));
+        System.out.println(collect2);
+
+
         List<Integer> integerList = Arrays.asList(10, 23, -4, 0, 18);
         List<Integer> sortedIntegerList = integerList.stream().sorted().collect(Collectors.toList());
         List<Integer> sortedIntegerListReverseOrder = integerList.stream()
@@ -21,7 +38,10 @@ public class sortingImplemetation {
         System.out.println(sortedIntegerListReverseOrder);
 
 
-        List<String> stringList = Arrays.asList("John", "Mark", "Robert", "Lucas", "Brandon");
+        List<String> stringList = Arrays.asList(
+                //"John", "Mark", "Robert", "Lucas", "Brandon"
+                "89084", "89085"
+                );
         List<String> sortedStringList = stringList.stream().sorted().collect(Collectors.toList());
         List<String> sortedStringListReverseOrder = stringList.stream().sorted(Collections.reverseOrder()).collect(Collectors.toList());
 
@@ -86,16 +106,27 @@ public class sortingImplemetation {
     }
 
     private static void printFourWheeler(String sortPattern, List<FourWheeler> fourWheelers) {
-        System.out.println(sortPattern);
-        fourWheelers.forEach(fourWheeler -> System.out.println(fourWheeler));
+//        System.out.println(sortPattern);
+//        fourWheelers.forEach(fourWheeler -> System.out.println(fourWheeler));
     }
 
     private static void printTwoWheeler(String sortPattern, List<TwoWheeler> twoWheelers2) {
-        System.out.println(sortPattern);
-        twoWheelers2.forEach(twoWheeler -> System.out.println(twoWheeler));
+//        System.out.println(sortPattern);
+//        twoWheelers2.forEach(twoWheeler -> System.out.println(twoWheeler));
     }
 
     private static void printIndividuals(List<Individual> collect) {
-        collect.forEach(System.out::println);
+        //collect.forEach(System.out::println);
     }
+
+
+}
+
+@AllArgsConstructor
+@Data
+class SampleSortingObject {
+    private Long offerId;
+    private Double discountAmount;
+    private Boolean planRestricted;
+    private Boolean ecpdRestricted;
 }

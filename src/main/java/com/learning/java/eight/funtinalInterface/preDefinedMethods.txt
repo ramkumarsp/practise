@@ -1,0 +1,5 @@
+supplier -> no argument and returns value -> collect
+consumer -> had arguments but no return value -> forEach
+predicate -> had arguemnts, tests them and returns a boolean -> filter
+funtion -> takes arguments and tranforms them to another form -> map, flatMap
+operator -> performs a reduction
