@@ -2,10 +2,13 @@ package com.learning.java.interview.genpact;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class EmployeeGPCompareImplementaion {
     public static void main(String[] args) {
         List<EmployeeGP> employeeGPList = new ArrayList<>();
+//        Arrays.asList(new EmployeeGP(1,"durgesh",1000000.00D),new EmployeeGP(2,"mani",30000.00D))
+
 
         List<EmployeeGP> salarySortedEmployee = employeeGPList.stream()
                 .sorted(Comparator.comparingDouble(EmployeeGP::getSalary))
@@ -26,8 +29,11 @@ public class EmployeeGPCompareImplementaion {
             System.out.print(first30KEmployee.get());
         }
 
-        Map<Integer, String> collectedMap = employeeGPList.stream().collect(Collectors.toMap(EmployeeGP::getId, EmployeeGP::getName));
+        Map<String, List<EmployeeGP>> collect1 = employeeGPList.stream()
+                .collect(Collectors.groupingBy(EmployeeGP::getName));
 
+        Map<Integer, String> collectedMap = employeeGPList.stream()
+                .collect(Collectors.toMap(EmployeeGP::getId, EmployeeGP::getName));
 
         List<Map.Entry<Integer, String>> collect = collectedMap.entrySet().stream().collect(Collectors.toList());
 
